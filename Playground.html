@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codeucate | Playground</title>
+    <link rel="icon" href="./assets/logo/withName.svg" type="image/svg+xml" />
+    <!-- Favicon -->
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Arial", sans-serif;
+            background-color: #f5f5f5;
+            color: #0c356a;
+        }
+
+        .navbar {
+            background-color: #002b2b;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .container {
+            text-align: center;
+            width: 95%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.1);
+            border: 1px solid transparent;
+            border-radius: 10px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            width: 45%;
+            /* Updated width for two cards in a row */
+            margin: 10px;
+            padding: 15px;
+            background-color: #002b2b;
+            color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            text-decoration: none;
+            text-align: center;
+            font-size: 1.2em;
+            /* Updated font size */
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            max-width: 70%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 0.9em;
+        }
+
+        @media screen and (max-width: 400px) {
+            .card {
+                width: 95%;
+                /* Updated width for one card in a row */
+            }
+        }
+
+        @media screen and (min-width: 600px) {
+            .navbar {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        /* Additional styles for small screen sizes */
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+        }
+
+        .for-editor-container {
+            justify-content: center;
+            border-radius: 20px;
+            background-color: aliceblue;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="for-editor-container">
+        <div class="code-editor">
+            <div class="code">
+                <div class="html-code">
+                    <h1><img src="images/html.png" alt="" />HTML</h1>
+                    <textarea placeholder="Explore Codeucate now!"></textarea>
+                </div>
+                <div class="css-code">
+                    <h1><img src="images/CSS.png" alt="" />CSS</h1>
+                    <textarea placeholder="Explore Codeucate now!"></textarea>
+                </div>
+                <div class="js-code">
+                    <h1><img src="images/js.png" alt="" />JS</h1>
+                    <textarea spellcheck="false" placeholder="Explore Codeucate now!"></textarea>
+                </div>
+            </div>
+            <iframe id="result"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6651136443221911"
+     crossorigin="anonymous"></script>
+</body>
+
+</html>
